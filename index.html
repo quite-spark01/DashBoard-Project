@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <title>Smart Dashboard</title>
+</head>
+<body>
+    <div class="smart-dashboard">
+            <div class="nav-bar">
+                <i  id="menu-icon" class="fa-solid fa-bars"></i>
+                <h1>Menu</h1>
+        </div>
+        <div class="main">
+            <div class="side-bar hide">
+                <ul class="menu">
+                    <li id="dashboard"><i class="fa-solid fa-grip"></i><span>Dashborad</span></li>
+                    <li id="analytics"><i class="fa-solid fa-magnifying-glass-chart"></i><span>Analytics</span></li>
+                    <li id="report"><i class="fa-solid fa-receipt"></i><span>Reports</span></li>
+                    <li id="tasks"><i class="fa-solid fa-list-check"></i><span>Tasks</span></li>
+                    <li id="messages"><i class="fa-solid fa-message"></i><span>Messages</span></li>
+                    <li id="setting"><i class="fa-regular fa-gears"></i><span>Theme Settings</span></li>
+                    <li id="help"><i class="fa-solid fa-question"></i><span>Help</span></li>
+                </ul>
+            </div>
+            <div class="main-content show">
+                <div class="card-container  ">
+                    <div class="card1 card">
+                        <div class="top-info">
+                            <span class="title">👥Title</span>
+                            <span class="sales">🛒Sales</span>
+                        </div>
+                        <div class="bottom-info">
+                            <span class="icon">👤Icon</span>
+                            <span class="info-change">ℹ️Information</span>
+                        </div>
+                    </div>
+
+                    <div class="card2 card">
+                        <div class="top-info">
+                            <span class="title">👥Title</span>
+                            <span class="sales">🛒Sales</span>
+                        </div>
+                        <div class="bottom-info">
+                            <span class="icon">👤Icon</span>
+                            <span class="info-change">ℹ️Information</span>
+                        </div>
+                    </div>
+                    <div class="card3 card">
+                        <div class="top-info">
+                            <span class="title">👥Title</span>
+                            <span class="sales">🛒Sales</span>
+                        </div>
+                        <div class="bottom-info">
+                            <span class="icon">👤Icon</span>
+                            <span class="info-change">ℹ️Information</span>
+                        </div>
+                    </div>
+                    <div class="card4 card">
+                        <div class="top-info">
+                            <span class="title">👥Title</span>
+                            <span class="sales">🛒Sales</span>
+                        </div>
+                        <div class="bottom-info">
+                            <span class="icon">👤Icon</span>
+                            <span class="info-change">ℹ️Information</span>
+                        </div>
+                    </div>
+                    <div class="card5 card">
+                        <div class="top-info">
+                            <span class="title">👥Title</span>
+                            <span class="sales">🛒Sales</span>
+                        </div>
+                        <div class="bottom-info">
+                            <span class="icon">👤Icon</span>
+                            <span class="info-change">ℹ️Information</span>
+                        </div>
+                    </div>
+                    <div class="card6 card">
+                        <div class="top-info">
+                            <span class="title">👥Title</span>
+                            <span class="sales">🛒Sales</span>
+                        </div>
+                        <div class="bottom-info">
+                            <span class="icon">👤Icon</span>
+                            <span class="info-change">ℹ️Information</span>
+                        </div>
+                    </div>
+                </div>
+                            <div class="report-container hide">
+                                <div><h1>Report View</h1></div>
+                                <table id="table">
+                                    <thead>
+                                   <tr>
+                                       <th>Dashboard Sales</th>
+                                       <th>Analytics Sales</th>
+                                       <th>Difference</th>
+                                   </tr>
+                                        </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th id="dashboard-sale"></th>
+                                        <th id="analytic-sale"></th>
+                                        <th id="difference"></th>
+                                    </tr>
+                                        </tbody>
+                                </table>
+                                <div class="note hide"></div>
+                     </div>
+                <div class="help-center hide">
+                       <div class-="question 1">
+                  <div class="question"> How can you see the original data?<span class="quesicon" >➕</span> </div>
+                   <div class="answers hide">By Clickinng on dashboard <span class="active" >👁️</span></div>
+                                 </div>
+                   <div class-="question 2">
+                   <div class="question"> How can you view the updated data? <span class="quesicon" >➕</span> </div>
+                    <div class="answers hide"> You can view the updated data by selecting analytics from menu<span class="active" >📅</span> </div>
+                           </div>
+                       <div class-="question 3">
+                          <div class="question"> How can you add/subtract sales? <span class="quesicon" >➕</span> </div>
+                              <div class="answers hide">By choosing the tasks in menu and add or subtract sales <span class="active" >🛒</span></div>
+                        </div>
+                      <div class-="question 4">
+                             <div class="question"> How can you get get the dark-mode?<span class="quesicon" >➕</span> </div>
+                                <div class="answers hide">By toggling in Theme setting <span class="active" > 🌑</span></div>
+                                   </div>
+                                     <div class-="question 5">
+                                  <div class="question"> How can you view the report? <span class="quesicon" >➕</span> </div>
+                                  <div class="answers hide">By Clickinng on Report<span class="active" >🗃️</span> </div>
+                                   </div>
+                               
+                </div>
+                <div class="message-container hide">
+                <p id="quote"></p>
+                    </div>
+            </div>
+   
+          </div>
+       
+        </div>
+  
+       
+<script src="Script1.js"></script>
+</body>
+
+
+</html>

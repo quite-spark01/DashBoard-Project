@@ -1,0 +1,228 @@
+﻿*{
+    padding:0;
+    margin:0;
+    font-family:'Times New Roman', Times, serif;
+    box-sizing:border-box;
+}
+.smart-dashboard {
+    width:100vw;
+    height: 100vh;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    color: azure;
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(42, 95, 121, 0.95);
+    position: fixed;
+    top: 0;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:soft-light;
+    background-color: rgba(99, 149, 180, 0.3);
+    height: 100vh;
+    width: 100%;
+    padding-top: 10vh;
+}
+.side-bar {
+    height:90vh;
+    width: 20%;
+    background-color:rgba(108, 145, 163, 0.95);
+   
+}
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.menu li {
+    display: flex;
+    align-items: center;
+    min-height: 8vh;
+    gap: 0.6rem;
+    margin-left: 1.5rem;
+    margin-top: 0.6rem;
+    list-style: none;
+    font-weight: bold;
+    color: azure;
+    font-size:1.1rem;
+}
+.menu li:hover{
+    cursor:pointer;
+    text-decoration:underline;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 80vh;
+    gap:1.2rem;
+    flex-wrap:wrap;
+
+}
+.top-info,.bottom-info{
+    display:flex;
+    padding:0.5rem;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+    height:8vh;
+
+}
+
+.card-container .card1,
+.card-container .card2,
+.card-container .card3,
+.card-container .card4,
+.card-container .card5,
+.card-container .card6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: honeydew;
+    border-radius: 1rem;
+    box-shadow: inset rgba(42, 95, 121, 0.95) 1px 2px;
+    height: 25vh;
+    width: 20vw;
+    border: dashed 0.2px rgba(108, 145, 163, 0.95);
+}
+.title,.sales,.icon,.info-change{
+    display:inline-block;
+    width:80px;
+}
+
+.hide{
+    display:none;
+}
+.show{
+display:flex;
+}
+#menu-icon{
+    margin:1rem;
+    font-size:1.5rem;
+    color:azure;
+    cursor:alias;
+}
+.report-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(42, 95, 121, 0.95);
+    gap: 1.2rem;
+}
+
+    #table {
+        border-collapse: collapse;
+        animation:scaleup 0.8s ease;
+    }
+    @keyframes scaleup{
+        from{
+            transform:scale(0.5);
+        }
+        to {
+            transform:scale(1);
+        }
+    }
+table th, tr {
+    border: 5px solid rgba(42, 95, 121, 0.95);
+    font-size: 1.5rem;
+    align-items: center;
+    padding: 1rem;
+    border-radius:0.2rem;
+}
+.note{
+    height:20vh;
+    width:50vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.2rem;
+    font-weight:bold;
+    
+}
+.help-center{
+    flex-direction:column;
+    min-height:60vh;
+    min-width:70vw;
+}
+.question {
+    display:flex;
+    cursor:pointer;
+    font-size: 1.2rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(42, 95, 121, 0.95);
+    color: white;
+    border-radius: 0.2rem;
+    width: 60vw;
+    height: 8vh;
+    justify-content:space-between;
+   
+}
+.answers {
+    animation: slideIn 0.4s ease;
+    justify-content: space-between;
+    margin: 1rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    color: black;
+    background-color: azure;
+    width: 60vw;
+    height: 8vh;
+    border-radius: 0.2rem;
+}
+.quesicon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    padding-right: 1rem;
+    transition:  transform 0.3s;
+}
+.active {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    padding-right: 1rem;
+}
+.rotate{
+    transform: rotate(45deg);
+   
+}
+.message-container {
+    height: 30vh;
+    width: 50vw;
+    background-color: azure;
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    color: rgba(108, 145, 163, 0.95);
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+#quote {
+    animation: slideIn 0.5s ease;
+    font-size:2rem;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
